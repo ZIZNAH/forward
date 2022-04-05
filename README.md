@@ -24,3 +24,13 @@ CFUSER=
 CFHOST=
 
 来源：[Cloudflare API v4一键安装脚本](https://github.com/yulewang/cloudflare-api-v4-ddns)
+
+------------------------------------------------------------------------------------------
+
+### **3、brook-pf.sh**
+
+脚本说明: Brook 端口转发 一键安装管理脚本
+系统支持: CentOS6+ / Debian6+ / Ubuntu14+
+
+来源：[Brook 端口转发 一键安装管理脚本](https://github.com/ToyoDAdoubiBackup/doubi)
+
