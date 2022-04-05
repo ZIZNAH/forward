@@ -13,14 +13,14 @@
 
 ### **2、cf-v4-ddns.sh**
 
-#### API key, see https://www.cloudflare.com/a/account/my-account,
-#### 这里填写上一步获取的CFKEY
+API key, see https://www.cloudflare.com/a/account/my-account,
+这里填写上一步获取的CFKEY
 CFKEY=
-#### 输入你需要解析用来DDNS解析的根域名 eg: example.com，比如我的域名是123.com，那么此处填写123.com
+输入你需要解析用来DDNS解析的根域名 eg: example.com，比如我的域名是123.com，那么此处填写123.com
 CFZONE=
-#### 登陆CF的Username, eg: user@example.com(即CF的登录邮箱)
+登陆CF的Username, eg: user@example.com(即CF的登录邮箱)
 CFUSER=
-#### 填写用来DDNS解析的二级域名，与上面设置的要一致, eg: ddns.yourdomain.com（例 ddns.123.com）
+填写用来DDNS解析的二级域名，与上面设置的要一致, eg: ddns.yourdomain.com（例 ddns.123.com）
 CFHOST=
 
 来源：[Cloudflare API v4一键安装脚本](https://github.com/yulewang/cloudflare-api-v4-ddns)
