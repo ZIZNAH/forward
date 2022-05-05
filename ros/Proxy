@@ -1,0 +1,5 @@
+/log info "Loading Proxy address list"
+/ip firewall address-list remove [/ip firewall address-list find list=Proxy]
+/ip firewall address-list
+:do { add address=192.168.5.46 list=Proxy } on-error={}
+}
