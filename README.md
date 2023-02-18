@@ -45,5 +45,18 @@ CFHOST=
 下载安装:
 wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/master/iptables-pf.sh && chmod +x iptables-pf.sh && bash iptables-pf.sh
 
-来源：[iptables-pf.sh一键安装脚本]([https://github.com/yulewang/cloudflare-api-v4-ddns](https://github.com/ToyoDAdoubiBackup/doubi#iptables-pfsh))
+来源：[iptables-pf.sh 一键安装脚本](https://github.com/ToyoDAdoubiBackup/doubi#iptables-pfsh)
 
+------------------------------------------------------------------------------------------
+
+### **5、natcfg.sh**
+
+- 推荐！！！
+- 脚本说明: natcfg.sh 端口转发 一键安装管理脚本
+- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
+- 使用方法: https://github.com/arloor/iptablesUtils/
+
+下载安装:
+wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/master/iptables-pf.sh && chmod +x iptables-pf.sh && bash iptables-pf.sh
+
+来源：[natcfg.sh 一键安装脚本](https://github.com/arloor/iptablesUtils/)
