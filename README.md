@@ -57,6 +57,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/
 - 使用方法: https://github.com/arloor/iptablesUtils/
 
 下载安装:
-wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/master/iptables-pf.sh && chmod +x iptables-pf.sh && bash iptables-pf.sh
+wget --no-check-certificate -qO natcfg.sh https://raw.githubusercontent.com/ZIZNAH/forward/master/natcfg.sh && bash natcfg.sh
 
 来源：[natcfg.sh 一键安装脚本](https://github.com/arloor/iptablesUtils/)
