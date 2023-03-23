@@ -23,7 +23,16 @@ CFUSER=
 填写用来DDNS解析的二级域名，与上面设置的要一致, eg: ddns.yourdomain.com（例 ddns.123.com）
 CFHOST=
 
+下载安装:
+~~~
 wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/master/cf-v4-ddns.sh && chmod +x cf-v4-ddns.sh 
+~~~
+设置定时任务
+crontab -e
+*/2 * * * * /root/cf-v4-ddns.sh >/dev/null 2>&1
+
+# 如果需要日志，替换上一行代码
+*/2 * * * * /root/cf-v4-ddns.sh >> /var/log/cf-ddns.log 2>&1
 
 来源：[Cloudflare API v4一键安装脚本](https://github.com/yulewang/cloudflare-api-v4-ddns)
 
