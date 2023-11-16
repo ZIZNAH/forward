@@ -1,4 +1,24 @@
+
 # 整合常用的shell脚本
+
+**自用**
+**replace_token.sh**
+
+token使用xiaoya默认位置：/etc/xiaoya
+获取地址：
+mytoken：[https://alist.nn.ci/zh/guide/drivers/aliyundrive.html](https://alist.nn.ci/zh/guide/drivers/aliyundrive.html)  
+myopentoken：[https://alist.nn.ci/tool/aliyundrive/request.html](https://alist.nn.ci/tool/aliyundrive/request.html)  
+temp_transfer_folder_id：[https://www.aliyundrive.com/drive/file/resource](https://www.aliyundrive.com/drive/file/resource)  
+转存：[https://www.aliyundrive.com/s/rP9gP3h9asE](https://www.aliyundrive.com/s/rP9gP3h9asE)
+一把梭：
+~~~bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/master/replace_token.sh && chmod +x replace_token.sh && bash replace_token.sh
+~~~
+---------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
 **感谢并致敬这些作者**
 ------------------------------------------------------------------------------------------
 ### **1、socat.sh**
@@ -25,7 +45,7 @@ CFHOST=
 
 下载安装:
 ~~~
-wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/master/cf-v4-ddns.sh && chmod +x cf-v4-ddns.sh 
+wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/master/cf-v4-ddns.sh && chmod +x && cf-v4-ddns.sh 
 ~~~
 设置定时任务
 ~~~
