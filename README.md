@@ -9,10 +9,10 @@ token使用xiaoya默认位置：/etc/xiaoya
 
 获取地址：
 
-mytoken：[https://alist.nn.ci/zh/guide/drivers/aliyundrive.html](https://alist.nn.ci/zh/guide/drivers/aliyundrive.html)  
-myopentoken：[https://alist.nn.ci/tool/aliyundrive/request.html](https://alist.nn.ci/tool/aliyundrive/request.html)  
-temp_transfer_folder_id：[https://www.aliyundrive.com/drive/file/resource](https://www.aliyundrive.com/drive/file/resource)  
-转存：[https://www.aliyundrive.com/s/rP9gP3h9asE](https://www.aliyundrive.com/s/rP9gP3h9asE)
+[mytoken](https://alist.nn.ci/zh/guide/drivers/aliyundrive.html)  
+[myopentoken](https://alist.nn.ci/tool/aliyundrive/request.html)  
+[temp_transfer_folder_id](https://www.aliyundrive.com/drive/file/resource)  
+[转存](https://www.aliyundrive.com/s/rP9gP3h9asE)
 
 一把梭：
 
