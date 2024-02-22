@@ -19,9 +19,9 @@ token使用xiaoya默认位置：/etc/xiaoya
 ~~~bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/master/replace_token.sh && chmod +x replace_token.sh && bash replace_token.sh
 ~~~
----------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------
+
 **mosdnsv5.yaml**
 
 确保mosdns文件夹已创建：/etc/mosdns
@@ -30,6 +30,82 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/
 ~~~bash
 wget -N --no-check-certificate -qO /etc/mosdns/config.yaml https://git.ziznah.net/https://raw.githubusercontent.com/ZIZNAH/forward/master/mosdnsv5.yaml && chmod +x /etc/mosdns/config.yaml
 ~~~
+
+------------------------------------------------------------------------------------------
+
+**mosdns v5**
+
+确保安装unzip： apt install unzip
+
+1、下载对应版本
+
+~~~bash
+wget https://git.ziznah.net/https://github.com/IrineSistiana/mosdns/releases/download/v5.3.1/mosdns-linux-amd64.zip && unzip mosdns-linux-amd64.zip && chmod +x mosdns
+~~~
+
+2、运行mosdns（确保config.yaml已经存在）
+~~~bash
+mosdns start -c config_file -d working_dir​
+~~~
+
+3、使用 systemd 来管理 mosdns 服务
+
+	1.安装 systemd
+
+	如果您的 Linux 服务器上尚未安装 systemd，可以使用包管理器如 yum（适用于 CentOS/RHEL）或 apt（适用于 Debian/Ubuntu）来安装它：
+
+	~~~bash
+	# 使用 yum 安装 systemd（CentOS/RHEL）
+	yum install systemd
+	# 使用 apt 安装 systemd（Debian/Ubuntu）
+	apt install systemd
+	~~~
+
+	2.创建mosdns.service 文件
+
+	使用文本编辑器 (如 vim) 在 /etc/systemd/system 目录下创建一个 mosdns.service 文件，用于配置 mosdns 服务。
+
+	~~~bash
+	sudo vim /etc/systemd/system/mosdns.service
+	~~~
+
+	写入内容
+	~~~bash
+	[Unit]
+	# 服务名称，可自定义
+	Description = mosdns server
+	After = network.target syslog.target
+	Wants = network.target
+
+	[Service]
+	Type = simple
+	# 启动frps的命令，需修改为您的mosdns的安装路径
+	ExecStart = /path/to/mosdns start -c /etc/mosdns -d /etc/mosdns
+
+	[Install]
+	WantedBy = multi-user.target
+	~~~
+
+	3.使用 systemd 命令管理 mosdns 服务
+
+	~~~bash
+	# 启动mosdns
+	sudo systemctl start mosdns
+	# 停止mosdns
+	sudo systemctl stop mosdns
+	# 重启mosdns
+	sudo systemctl restart mosdns
+	# 查看mosdns状态
+	sudo systemctl status mosdns
+	~~~
+
+	4.设置 mosdns 开机自启动
+
+	~~~bash
+	sudo systemctl enable mosdns
+	~~~
+
+
 
 ------------------------------------------------------------------------------------------
 **感谢并致敬这些作者**
