@@ -21,7 +21,15 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/
 ~~~
 ---------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------
+**mosdnsv5.yaml**
 
+确保mosdns文件夹已创建：/etc/mosdns
+
+一把梭：
+~~~bash
+wget -N --no-check-certificate -qO /etc/mosdns/config.yaml https://git.ziznah.net/https://raw.githubusercontent.com/ZIZNAH/forward/master/mosdnsv5.yaml && chmod +x replace_token.sh 
+~~~
 
 ------------------------------------------------------------------------------------------
 **感谢并致敬这些作者**
