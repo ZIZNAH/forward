@@ -37,7 +37,8 @@ geodat_update
 v2dat_dump
 update_local_ptr
 
-touch /etc/mosdns/force-nocn.txt
-touch /etc/mosdns/force-cn.txt
+touch /etc/mosdns/rules/force-nocn.txt
+touch /etc/mosdns/rules/force-cn.txt
+touch /etc/mosdns/rules/hosts.txt
 
 # force-cn 是强制本地解析域名，force-nocn 是强制非本地解析域名
