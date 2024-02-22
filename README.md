@@ -100,3 +100,19 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/
 wget --no-check-certificate -qO natcfg.sh https://raw.githubusercontent.com/ZIZNAH/forward/master/natcfg.sh && bash natcfg.sh
 ~~~
 来源：[natcfg.sh 一键安装脚本](https://github.com/arloor/iptablesUtils/)
+
+------------------------------------------------------------------------------------------
+
+### **6、mosdns_geodata_download.sh**
+
+- 推荐！！！
+- 脚本说明: mosdns geodata_download
+- 系统支持: linux
+- 使用方法: https://github.com/xukecheng/scripts/
+- 备注:原版添加CDN
+
+下载安装:
+~~~
+wget https://git.ziznah.net/https://raw.githubusercontent.com/ZIZNAH/forward/master/mosdns_geodata_download.sh -O mosdns_geodata_download.sh && chmod +x mosdns_geodata_download.sh && mosdns_geodata_download.sh
+~~~
+来源：[mosdns_geodata_download.sh]([https://github.com/arloor/iptablesUtils/](https://raw.githubusercontent.com/xukecheng/scripts/main/mosdns_geodata_download.sh)https://raw.githubusercontent.com/xukecheng/scripts/main/mosdns_geodata_download.sh)
