@@ -54,23 +54,19 @@ mosdns start -c config_file -d working_dir​
 
 	如果您的 Linux 服务器上尚未安装 systemd，可以使用包管理器如 yum（适用于 CentOS/RHEL）或 apt（适用于 Debian/Ubuntu）来安装它：
 
-	~~~bash
 	# 使用 yum 安装 systemd（CentOS/RHEL）
 	yum install systemd
 	# 使用 apt 安装 systemd（Debian/Ubuntu）
 	apt install systemd
-	~~~
 
 	2.创建mosdns.service 文件
 
 	使用文本编辑器 (如 vim) 在 /etc/systemd/system 目录下创建一个 mosdns.service 文件，用于配置 mosdns 服务。
 
-	~~~bash
 	sudo vim /etc/systemd/system/mosdns.service
-	~~~
 
 	写入内容
-	~~~bash
+
 	[Unit]
 	# 服务名称，可自定义
 	Description = mosdns server
@@ -84,11 +80,9 @@ mosdns start -c config_file -d working_dir​
 
 	[Install]
 	WantedBy = multi-user.target
-	~~~
 
 	3.使用 systemd 命令管理 mosdns 服务
 
-	~~~bash
 	# 启动mosdns
 	sudo systemctl start mosdns
 	# 停止mosdns
@@ -97,13 +91,11 @@ mosdns start -c config_file -d working_dir​
 	sudo systemctl restart mosdns
 	# 查看mosdns状态
 	sudo systemctl status mosdns
-	~~~
 
 	4.设置 mosdns 开机自启动
 
-	~~~bash
 	sudo systemctl enable mosdns
-	~~~
+
 
 
 
