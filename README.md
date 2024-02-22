@@ -28,7 +28,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ZIZNAH/forward/
 
 一把梭：
 ~~~bash
-wget -N --no-check-certificate -qO /etc/mosdns/config.yaml https://git.ziznah.net/https://raw.githubusercontent.com/ZIZNAH/forward/master/mosdnsv5.yaml && chmod +x replace_token.sh 
+wget -N --no-check-certificate -qO /etc/mosdns/config.yaml https://git.ziznah.net/https://raw.githubusercontent.com/ZIZNAH/forward/master/mosdnsv5.yaml && chmod +x /etc/mosdns/config.yaml
 ~~~
 
 ------------------------------------------------------------------------------------------
