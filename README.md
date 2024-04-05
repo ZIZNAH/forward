@@ -76,7 +76,7 @@ mosdns start -c config_file -d working_dir​
 	[Service]
 	Type = simple
 	# 启动frps的命令，需修改为您的mosdns的安装路径
-	ExecStart = /path/to/mosdns start -c /etc/mosdns -d /etc/mosdns
+	ExecStart = /path/to/mosdns start -c config_file -d working_dir​
 
 	[Install]
 	WantedBy = multi-user.target
